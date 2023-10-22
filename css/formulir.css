@@ -1,0 +1,103 @@
+html {
+    background-color: rgb(233, 228, 228);
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+}
+.logo-and-title h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    
+}
+.logo-and-title img {
+    max-width: 100px;
+    margin-right: 40px; 
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#nav table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+#nav table td {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+}
+#nav table td .tombol {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+}
+#nav table td button:hover {
+    background-color: #8ba7d0; 
+}
+#nav table td .tombol-active {
+    background-color: #8ba7d0; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+}
+#nav table td .tombol-active:hover {
+    background-color: #484849; 
+}
+
+#conten form {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#conten table {
+    width: 100%;
+}
+#conten th,#conten td {
+    text-align: left;
+    padding: 8px;
+}
+#conten input[type="submit"] {
+    background-color: #085cdb;  
+    color: white;  
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;  
+    margin: 0 auto; 
+    cursor: pointer;
+}
+#conten input[type="submit"]:hover {
+    background-color: #8ba7d0; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}

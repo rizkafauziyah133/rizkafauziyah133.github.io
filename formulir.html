@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" type="text/css" href="css/formulir.css">
+    <div class="logo-and-title">
+        <img src="img/Logoitera.png" alt="logo">
+        <h1>INSTITUT TEKNOLOGI SUMATERA</h1>
+    </div>  
+</head>
+<body>
+    <hr style="width: 100%;">
+    <div id="nav">
+        <form>
+            <table>
+                <tr>
+                    <td><button class="tombol" type="button" onclick="window.location.href='index.html'">Home</button></a></td>
+                    <td><button class="tombol-active" type="button" onclick="window.location.href='formulir.html'">Formulir Pendaftaran</button></a></td>
+                    <td><button class="tombol" type="button" onclick="window.location.href='table.html'">Data Mahasiswa</button></a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr style="width: 100%;">
+
+    <div id="conten">
+        <form method="get" action="table.html">
+            <table>
+                <tr>
+                    <th><label for="nama">Nama</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="nama" name="nama" required></td>
+                </tr>
+                <tr>
+                    <th><label for="nim">NIM</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="nim" name="nim" required></td>
+                </tr>
+                <tr>
+                    <th><label for="prodi">Program Studi</label></th>
+                    <th>:</th>
+                    <td><input type="text" id="prodi" name="prodi" required></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email</label></th>
+                    <th>:</th>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <th><label for="password">Password</label></th>
+                    <th>:</th>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <th><label for="jenis-kelamin">Jenis Kelamin</label></th>
+                    <th>:</th>
+                    <td>
+                        <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki" required>
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required>
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="tanggal-lahir">Tanggal Lahir</label></th>
+                    <th>:</th>
+                    <td><input type="date" id="tanggal-lahir" name="tanggal-lahir" required></td>
+                </tr>
+                <tr>
+                    <th><label for="alamat">Alamat</label></th>
+                    <th>:</th>
+                    <td><textarea id="alamat" name="alamat" required></textarea></td>
+                </tr>
+            </table>
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+<footer>
+    <p>Rizka Fauziyah - 121140133</p>
+</footer>
+</html>

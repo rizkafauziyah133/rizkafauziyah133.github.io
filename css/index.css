@@ -1,0 +1,103 @@
+html {
+    background-color: rgb(233, 228, 228);
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+}
+.logo-and-title h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    
+}
+.logo-and-title img {
+    max-width: 100px;
+    margin-right: 40px; 
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+#nav table td {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+}
+table td .tombol {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+}
+
+table td button:hover {
+    background-color: #8ba7d0; 
+}
+table td .tombol-active {
+    background-color: #8ba7d0; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+}
+
+table td .tombol-active:hover {
+    background-color: #484849; 
+}
+
+#isi h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+#isi h2{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+#isi p{
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    
+}
+
+#isi table{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

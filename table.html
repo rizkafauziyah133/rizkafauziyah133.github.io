@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <div class="logo-and-title">
+        <img src="img/Logoitera.png" alt="logo">
+        <h1>INSTITUT TEKNOLOGI SUMATERA</h1>
+    </div>
+</head>
+<body>
+    <hr style="width: 100%;">
+    <div id="nav">
+        <form>
+            <table>
+                <tr>
+                    <td><button class="tombol" type="button" onclick="window.location.href='index.html'">Home</button></a></td>
+                    <td><button class="tombol" type="button" onclick="window.location.href='formulir.html'">Formulir Pendaftaran</button></a></td>
+                    <td><button class="tombol-active" type="button" onclick="window.location.href='table.html'">Data Mahasiswa</button></a></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr style="width: 100%;">
+
+    <div id="table-data">
+        <h1>Daftar Mahasiswa ITERA</h1>
+
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Program Studi</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Jenis Kelamin</th>
+                <th>Tanggal Lahir</th>
+                <th>Alamat</th>
+            </tr>
+            <script>
+                const urlParams = new URLSearchParams(window.location.search);
+                const nama = urlParams.get('nama');
+                const nim = urlParams.get('nim');
+                const prodi = urlParams.get('prodi');
+                const email = urlParams.get('email');
+                const password = urlParams.get('password');
+                const jenisKelamin = urlParams.get('jenis-kelamin');
+                const tanggalLahir = urlParams.get('tanggal-lahir');
+                const alamat = urlParams.get('alamat');
+        
+                if (nama) {
+                    const table = document.querySelector('div table');
+                    const newRow = table.insertRow(-1);
+        
+                    const cell1 = newRow.insertCell(0);
+                    cell1.textContent = nama;
+        
+                    const cell2 = newRow.insertCell(1);
+                    cell2.textContent = nim;
+        
+                    const cell3 = newRow.insertCell(2);
+                    cell3.textContent = prodi;
+        
+                    const cell4 = newRow.insertCell(3);
+                    cell4.textContent = email;
+        
+                    const cell5 = newRow.insertCell(4);
+                    cell5.textContent = "********";
+        
+                    const cell6 = newRow.insertCell(5);
+                    cell6.textContent = jenisKelamin;
+        
+                    const cell7 = newRow.insertCell(6);
+                    cell7.textContent = tanggalLahir;
+        
+                    const cell8 = newRow.insertCell(7);
+                    cell8.textContent = alamat;
+                }
+            </script>
+            <tr>
+                <td>Rizka Fauziyah</td>
+                <td>121140133</td>
+                <td>Teknik Informatika</td>
+                <td>rizka.121140133@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Perempuan</td>
+                <td>2003-08-06</td>
+                <td>Bandar Lampung</td>
+            </tr>
+            <tr>
+                <td>Rizki Kurniawati</td>
+                <td>121150233</td>
+                <td>Teknologi Pangan</td>
+                <td>rizki.121150233@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Perempuan</td>
+                <td>2003-01-02</td>
+                <td>Bandar Lampung</td>
+            </tr>
+            <tr>
+                <td>Dila Ayu Rhafiqa</td>
+                <td>121160068</td>
+                <td>Sains Aktuaria</td>
+                <td>dila.120160068@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Perempuan</td>
+                <td>2002-11-15</td>
+                <td>Bandar Lampung</td>
+            </tr>
+            <tr>
+                <td>Bagas Satria</td>
+                <td>121170056</td>
+                <td>Farmasi</td>
+                <td>berlian.1211700561@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Laki-laki</td>
+                <td>2003-07-24</td>
+                <td>Bandar Lampung</td>
+            </tr>
+            <tr>
+                <td>Adra Salfie Nurazizaira</td>
+                <td>121140151</td>
+                <td>Teknik Informatika</td>
+                <td>adra.1211401517@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Perempuan</td>
+                <td>2003-09-17</td>
+                <td>Bandar Lampung</td>
+            </tr>
+            <tr>
+                <td>Rizal Sinaga </td>
+                <td>121120111</td>
+                <td>Teknik Industri</td>
+                <td>rizal.121120111@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Laki-laki</td>
+                <td>2003-06-08</td>
+                <td>Bandar Lampung</td>
+            </tr>
+            <tr>
+                <td>Jaehyun</td>
+                <td>121040133</td>
+                <td>Teknik Mesin</td>
+                <td>jehyun.121040133@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Laki-Laki</td>
+                <td>2001-02-14</td>
+                <td>Bandar Lampung</td>
+            </tr>
+            <tr>
+                <td>Zayn Malik</td>
+                <td>120140157</td>
+                <td>Teknik Informatika</td>
+                <td>zayn.120140157@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Laki-laki</td>
+                <td>2002-03-19</td>
+                <td>Bandar Lampung</td>
+            </tr>
+            <tr>
+                <td>Muhammad Iqbal</td>
+                <td>120040178</td>
+                <td>Teknik Mesin</td>
+                <td>muhammad.120040178@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Laki-laki</td>
+                <td>2001-05-15</td>
+                <td>Bandar Lampung</td>
+            </tr>
+            <tr>
+                <td>Sams Smith</td>
+                <td>120200121</td>
+                <td>Arsitektur</td>
+                <td>sams.119200121@student.itera.ac.id</td>
+                <td>********</td>
+                <td>Laki-laki</td>
+                <td>1999-05-30</td>
+                <td>Bandar Lampung</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<footer>
+    <p>Rizka Fauziyah - 121140133</p>
+</footer>
+</html>
